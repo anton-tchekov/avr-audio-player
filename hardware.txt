@@ -1,0 +1,35 @@
+AUDIO PLAYER AND RECORDER - Hardware overwiev
+=============================================
+
+Features:
+
+ - 16x2 Character LCD
+ - 7 programmable buttons and one reset button
+ - 16 MHz Processor
+ - On/Off switch
+ - Volume knobs for both channels
+ - Play stereo sound through audio jack from SD card
+ - Record sound through microphone to SD card
+ - File Manager
+ - Text Reader
+
+
+Microcontroller pinout and connections:
+
+                               +---------+
+    RESET (KEYPAD7) ---- PC6 --|         |-- PC5  ---- MIC IN
+          LCD DATA0 ---- PD0 --|         |-- PC4  ---- KEYPAD1
+          LCD DATA1 ---- PD1 --|    A    |-- PC3  ---- KEYPAD2
+          LCD DATA2 ---- PD2 --|    T    |-- PC2  ---- KEYPAD3
+          LCD DATA3 ---- PD3 --|    M    |-- PC1  ---- KEYPAD4
+             LCD RS ---- PD4 --|    E    |-- PC0  ---- KEYPAD5
+                VCC ---- VCC --|    G    |-- GND  ---- GND
+                GND ---- GND --|    A    |-- AREF ---- NC (NOT CONNECTED)
+               XTAL ---- PB6 --|         |-- AVCC ---- VCC
+               XTAL ---- PB7 --|    1    |-- PB5  ---- SD-CARD SCK
+     HEADPHONE LEFT ---- PD5 --|    6    |-- PB4  ---- SD-CARD MISO
+    HEADPHONE RIGHT ---- PD6 --|    8    |-- PB3  ---- SD-CARD MOSI
+             LCD EN ---- PD7 --|         |-- PB2  ---- SD-CARD SS
+            KEYPAD0 ---- PB0 --|         |-- PB1  ---- KEYPAD6
+                               +---------+
+
